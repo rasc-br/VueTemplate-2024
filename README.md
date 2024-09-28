@@ -3,19 +3,31 @@
 ### Steps
 
 Create a project with Vite:
+
 `npm create vite@latest`
+
 Update Vue, Vite and Typescript
+
 `npm i vue@latest`
+
 `npm i -D vite@latest typescript@latest vue-tsc@latest @vitejs/plugin-vue@latest`
+
 Install linter
+
 `npm install -D eslint eslint-plugin-vue`
+
 Install prettier
+
 `npm i -D prettier@latest eslint-plugin-prettier eslint-config-prettier`
+
 Install Typescript linter configuration
+
 `npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 
 Create a `eslint.config.js` at root folder (ESLint flat configuration)
+
 Added linter rules to the `eslint.config.js` file:
+
 
 ```
 import pluginVue from "eslint-plugin-vue";
@@ -67,7 +79,11 @@ export default [
 ];
 ```
 
+
 Add `"prettier": "prettier . --write"` to `package.json` scripts to be able to run prettier.
+
 Then at the console: `npm run prettier`
+
+
 
 `TADA!`
